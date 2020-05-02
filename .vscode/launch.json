@@ -12,7 +12,7 @@
         "args": [
           "deploy",
           "-f",
-          "config/release.yaml",
+          "config/manifest.yaml",
         ]
       },
       {
