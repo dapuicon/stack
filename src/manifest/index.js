@@ -62,8 +62,8 @@ const get = ({file}) => {
   const {value, error} = internals.read({file})
   if (error) return ({error})
   // if (error) throw new CLIError(error)
-  const releases = internals.normalize(value)
-  return {releases}
+  // const manifest = internals.normalize(value)
+  return {manifest: value}
 }
 
 // eslint-disable-next-line no-multi-assign

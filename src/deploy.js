@@ -1,9 +1,9 @@
-const Release = require('./release')
+const Manifest = require('./manifest')
 
 const run = function ({file}) {
-  const {releases, error} = Release.get({file})
+  const {manifest, error} = Manifest.get({file})
   // eslint-disable-next-line no-console
-  console.log(releases)
+  console.log(manifest)
   return {error}
 }
 
