@@ -1,0 +1,23 @@
+releases:
+- name: supergrafana
+  namespace: istio-system
+  chart:
+    name: stable/grafana
+    version: 5.0.1
+  values:
+    name: values/grafanahybrid
+    version: 1.1.2
+- name: traefik
+  namespace: tools
+  chart:
+    name: bitnami/traefik-ingress
+    version: 1.19.0
+  values:
+    name: values/traefikcloud
+    version: 2.3.1
+repositories:
+- values: http://kubernetes-charts.storage.googleapis.com
+- stable: https://kubernetes-charts.storage.googleapis.com
+- bitnami: https://charts.bitnami.com/bitnami
+
+
